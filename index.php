@@ -23,7 +23,7 @@ $today = date("Y-m-d");
         <h1>Smart Queue</h1>
         <nav>
             <a href="index.php">Book Token</a>
-            <a href="status.php">Live Queue</a>
+            <a href="status.php"> live dashboard</a>
             <a href="admin_login.php">Admin</a>
         </nav>
     </header>
