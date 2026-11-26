@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #243247;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 16px 5%;
+    background: #17365d;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 650px;
+    margin: 35px auto;
+    padding: 0 15px;
+}
+
+.wide {
+    max-width: 1100px;
+}
+
+.card {
+    padding: 25px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+}
+
+h2 {
+    margin-top: 0;
+    color: #17365d;
+}
+
+label {
+    display: block;
+    margin: 13px 0 6px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background: white;
+    font-size: 15px;
+}
+
+button,
+.button-link {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 11px 18px;
+    border: 0;
+    border-radius: 6px;
+    background: #1769aa;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover,
+.button-link:hover {
+    background: #124f82;
+}
+
+.secondary {
+    background: #64748b;
+}
+
+.token {
+    margin: 15px 0;
+    color: #1769aa;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+th {
+    background: #eaf1f8;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.stat {
+    flex: 1;
+    min-width: 130px;
+    padding: 18px;
+    border-radius: 10px;
+    background: white;
+    text-align: center;
+}
+
+.stat b {
+    display: block;
+    color: #1769aa;
+    font-size: 28px;
+}
+
+.stat span {
+    color: #526174;
+}
+
+.inline-form {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.inline-form select {
+    min-width: 115px;
+}
+
+.inline-form button {
+    margin: 0;
+    padding: 9px;
+}
+
+.error {
+    color: #b42318;
+}
+
+.muted {
+    color: #64748b;
+}
+
+@media (max-width: 650px) {
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .card {
+        padding: 17px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 7px 5px;
+    }
+
+    .inline-form {
+        align-items: stretch;
+        flex-direction: column;
+    }
+}
